@@ -1,74 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - CV</title>
-    <link rel="stylesheet" href="styles.css" />
+  <!-- Required meta tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name - Home</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-jcKb8qQU8YJspXqMbktbS36nNqlvp/OjTXpF0bWV5jJZ4qcPp5qOjMx4dZ1IMB07"
+    crossorigin="anonymous"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha384-jLKHWMk4Jv3+E5bpVKvsY9CF6Pf8PnG48NFpXajJukRJdFsxgSKjYveAhxJ6brjB"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
-    <header>
-        <h1>Your Full Name</h1>
-        <p>Email: <a href="mailto:youremail@example.com">titu85@example.com</a></p>
-        <p>Phone: +1-234-567-8901</p>
-        <p>
-            <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> |
-            <a href="https://github.com/yourusername">GitHub</a>
-        </p>
-    </header>
-    <hr />
-    <section>
-        <h2>Professional Summary</h2>
-        <p>
-            A brief paragraph summarizing your professional background and key skills.
-        </p>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Your Name</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="jumbotron text-center">
+    <div class="container">
+      <h1 class="display-4">Your Full Name</h1>
+      <p class="lead">Your Professional Title or Tagline</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About Me Section -->
+    <section id="about" class="my-5">
+      <h2>About Me</h2>
+      <p>
+        <!-- Your brief bio goes here -->
+        I am a [Your Position] at [Your Institution]. My work focuses on [Your Research Areas].
+      </p>
     </section>
-    <section>
-        <h2>Education</h2>
-        <h3>Degree Title</h3>
-        <p>University Name, Graduation Year</p>
-        <p>GPA: 3.8/4.0 (Optional)</p>
+
+    <!-- Research Interests Section -->
+    <section id="research" class="my-5">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Natural Language Processing</li>
+        <li>Machine Learning</li>
+        <li>Artificial Intelligence</li>
+        <!-- Add more interests as needed -->
+      </ul>
     </section>
-    <section>
-        <h2>Work Experience</h2>
-        <h3>Job Title - Company Name</h3>
-        <p>Start Date - End Date</p>
-        <ul>
-            <li>Responsibility or Achievement 1</li>
-            <li>Responsibility or Achievement 2</li>
-            <li>Responsibility or Achievement 3</li>
-        </ul>
-        <!-- Repeat for other positions -->
+
+    <!-- Publications Section -->
+    <section id="publications" class="my-5">
+      <h2>Publications</h2>
+      <ul class="list-unstyled">
+        <li class="media my-4">
+          <img src="path/to/thumbnail1.jpg" class="mr-3" alt="Thumbnail 1" width="64" />
+          <div class="media-body">
+            <h5 class="mt-0 mb-1">Paper Title 1</h5>
+            Authors: A. Author, B. Author<br />
+            Conference/Journal, Year<br />
+            <a href="link-to-paper1.pdf" target="_blank">Download Paper</a>
+          </div>
+        </li>
+        <!-- Repeat for more publications -->
+      </ul>
     </section>
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: JavaScript, Python, Java</li>
-            <li>Web Technologies: HTML5, CSS3, React</li>
-            <li>Databases: MySQL, MongoDB</li>
-            <!-- Add more skills -->
-        </ul>
+
+    <!-- Contact Section -->
+    <section id="contact" class="my-5">
+      <h2>Contact</h2>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:youremail@example.com">youremail@example.com</a><br />
+        <strong>Office:</strong> Your Office Location<br />
+        <strong>Phone:</strong> +1-234-567-8901
+      </p>
+      <!-- Social Media Icons -->
+      <p>
+        <a href="https://github.com/yourusername" target="_blank" class="mr-3">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="mr-3">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/yourusername" target="_blank">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <!-- Add more icons as needed -->
+      </p>
     </section>
-    <section>
-        <h2>Projects</h2>
-        <h3>Project Title</h3>
-        <p>
-            A brief description of the project. <a href="https://github.com/yourusername/project-repo">GitHub Link</a>
-        </p>
-        <!-- Repeat for other projects -->
-    </section>
-    <section>
-        <h2>Certifications & Awards</h2>
-        <ul>
-            <li>Certification Name - Issuing Organization - Year</li>
-            <!-- Add more certifications or awards -->
-        </ul>
-    </section>
-    <footer>
-        <hr />
-        <p>&copy; 2023 Your Name</p>
-    </footer>
-             
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-light">
+    <p>&copy; 2023 Your Name</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
