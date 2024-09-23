@@ -13,7 +13,7 @@ header {
   align-items: center;
   background-color: #333;
   padding: 10px 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header .logo img {
@@ -42,7 +42,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background-color: #555; /* Change background on hover */
+  background-color: #555;
   text-decoration: none;
 }
 
@@ -53,36 +53,52 @@ header nav ul li a:hover {
   justify-content: center;
   background-color: #f4f4f4;
   padding: 50px 20px;
-  height: 100vh; /* Full-screen hero section */
-  background: #333; /* Dark background */
-  color: white; /* Light text */
+  height: 100vh;
+  background: #f9f9f9; /* Light background */
+  color: #333; /* Dark text */
 }
 
 .hero-content {
   display: flex;
+  flex-direction: row; /* Make image appear on the left and text on the right */
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   width: 100%;
 }
 
+/* Image on the left */
+.hero .left {
+  max-width: 400px; /* Limit image size */
+  margin-right: 50px; /* Add space between the image and the text */
+}
+
 .hero h1 {
-  font-size: 3rem; /* Larger title */
-  color: #fff;
+  font-size: 3rem;
+  color: #333;
   margin-bottom: 0.5em;
 }
 
 .hero h2 {
   font-size: 1.8rem;
-  color: #ff6600; /* Accent color for sub-heading */
+  color: #555;
   margin-top: 10px;
 }
 
-/* Image Style */
-.hero .hero-image {
-  max-width: 400px; /* Increased image size */
-  border-radius: 10px;
-  margin-right: 20px; /* Add spacing between the image and text */
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .hero-content {
+      flex-direction: column;
+  }
+
+  .hero .left {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .hero h1, .hero h2 {
+      text-align: center;
+  }
 }
 
 /* Footer Section */
@@ -94,20 +110,4 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
-  .hero-content {
-      flex-direction: column; /* Stack content vertically on smaller screens */
-  }
-
-  .hero .hero-image {
-      max-width: 100%;
-      margin-bottom: 20px; /* Add space below the image */
-  }
-
-  .hero h1, .hero h2 {
-      text-align: center;
-  }
 }
