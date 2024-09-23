@@ -1,74 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Name - CV</title>
-    <link rel="stylesheet" href="styles.css" />
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-    <header>
-        <h1>Your Full Name</h1>
-        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-        <p>Phone: +1-234-567-8901</p>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <a href="#">Your Name</a>
+      </div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <h1>Your Full Name</h1>
+      <h2>Your Professional Title</h2>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
         <p>
-            <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a> |
-            <a href="https://github.com/yourusername">GitHub</a>
+          <!-- Your brief bio goes here -->
+          I am a [Your Position] at [Your Institution]. My work focuses on [Your Research Areas].
         </p>
-    </header>
-    <hr />
-    <section>
-        <h2>Professional Summary</h2>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research">
+      <div class="container">
+        <h2>Research</h2>
         <p>
-            A brief paragraph summarizing your professional background and key skills.
+          <!-- Details about your research interests -->
+          My research interests include Natural Language Processing, Machine Learning, and Artificial Intelligence.
         </p>
+      </div>
     </section>
-    <section>
-        <h2>Education</h2>
-        <h3>Degree Title</h3>
-        <p>University Name, Graduation Year</p>
-        <p>GPA: 3.8/4.0 (Optional)</p>
-    </section>
-    <section>
-        <h2>Work Experience</h2>
-        <h3>Job Title - Company Name</h3>
-        <p>Start Date - End Date</p>
-        <ul>
-            <li>Responsibility or Achievement 1</li>
-            <li>Responsibility or Achievement 2</li>
-            <li>Responsibility or Achievement 3</li>
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <div class="container">
+        <h2>Publications</h2>
+        <ul class="publication-list">
+          <li>
+            <strong>Publication Title 1</strong><br />
+            Authors: A. Author, B. Author<br />
+            <em>Journal Name</em>, Year<br />
+            <a href="link-to-paper1.pdf">Download PDF</a>
+          </li>
+          <!-- Repeat for more publications -->
         </ul>
-        <!-- Repeat for other positions -->
+      </div>
     </section>
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: JavaScript, Python, Java</li>
-            <li>Web Technologies: HTML5, CSS3, React</li>
-            <li>Databases: MySQL, MongoDB</li>
-            <!-- Add more skills -->
-        </ul>
-    </section>
-    <section>
-        <h2>Projects</h2>
-        <h3>Project Title</h3>
+
+    <!-- Teaching Section -->
+    <section id="teaching">
+      <div class="container">
+        <h2>Teaching</h2>
         <p>
-            A brief description of the project. <a href="https://github.com/yourusername/project-repo">GitHub Link</a>
+          <!-- Information about your teaching experience -->
+          I teach courses on Data Structures, Algorithms, and Machine Learning at [Your Institution].
         </p>
-        <!-- Repeat for other projects -->
+      </div>
     </section>
-    <section>
-        <h2>Certifications & Awards</h2>
-        <ul>
-            <li>Certification Name - Issuing Organization - Year</li>
-            <!-- Add more certifications or awards -->
-        </ul>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:youremail@example.com">youremail@example.com</a><br />
+          <strong>Office:</strong> Your Office Location<br />
+          <strong>Phone:</strong> +1-234-567-8901
+        </p>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+          <a href="https://github.com/yourusername" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://twitter.com/yourusername" target="_blank"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <!-- Add more icons as needed -->
+        </div>
+      </div>
     </section>
-    <footer>
-        <hr />
-        <p>&copy; 2023 Your Name</p>
-    </footer>
-             
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Your Name</p>
+    </div>
+  </footer>
+
+  <!-- Font Awesome CDN for Icons -->
+  <script
+    src="https://kit.fontawesome.com/yourfontawesomekit.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Smooth Scrolling Script -->
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
 </body>
 </html>
