@@ -23,8 +23,8 @@ header {
 
 /* Logo Styling */
 header .logo img {
-  width: 1cm;
-  height: 1cm;
+  width: 2cm;
+  height: 2cm;
   object-fit: cover;
   display: block;
 }
