@@ -60,7 +60,6 @@ header nav ul li a:hover {
 
 .hero-content {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -83,7 +82,7 @@ header nav ul li a:hover {
 .hero .hero-image {
   max-width: 400px; /* Increased image size */
   border-radius: 10px;
-  margin-left: 20px; /* Add spacing between the text and image */
+  margin-right: 20px; /* Add spacing between the image and text */
 }
 
 /* Footer Section */
