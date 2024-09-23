@@ -1,101 +1,105 @@
-/* General Reset */
+/* styles.css */
+
+/* Reset some basic elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Global styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1a1a1a;
-  color: #fff;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #f4f4f4;
 }
 
-/* Header Styling */
+/* Header styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
-  background-color: #000;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
 }
 
-/* Logo Styling */
-header .logo img {
-  width: 2cm;
-  height: 2cm;
-  object-fit: cover;
-  display: block;
+.logo img {
+  width: 50px; /* Adjust the size of your logo here */
+  height: auto;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
+  list-style: none;
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 18px;
 }
 
 nav ul li a:hover {
-  color: #ff6600;
+  color: #ff4500;
 }
 
-/* Hero Section */
+/* Hero section */
 .hero {
-  height: 60vh;
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero h2 {
-  font-size: 36px;
-  color: #ff6600;
+  background-color: #ff4500; /* Adjust the hero section background */
+  color: white;
+  padding: 100px 20px;
   text-align: center;
 }
 
-/* Section Styling */
-section {
-  padding: 50px;
-  background-color: #1a1a1a;
+.hero-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
+/* Container styling for other sections */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section styling */
+section {
+  padding: 60px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 20px;
-  color: #ff6600;
+  color: #333;
 }
 
 p {
   font-size: 18px;
-  line-height: 1.6;
-  color: #ccc;
-  text-align: center;
+  color: #666;
 }
 
-/* Footer Section */
+/* Footer styling */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #000;
-  color: #ccc;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer p {
-  font-size: 14px;
+  margin: 0;
 }
