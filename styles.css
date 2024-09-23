@@ -13,20 +13,22 @@ header {
   align-items: center;
   background-color: #333;
   padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
 }
 
 header .logo img {
   max-width: 50px;
+  height: auto;
 }
 
 header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
 header nav ul li {
-  display: inline-block;
   margin-right: 20px;
 }
 
@@ -34,10 +36,14 @@ header nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #555; /* Change background on hover */
+  text-decoration: none;
 }
 
 /* Hero Section */
@@ -47,6 +53,9 @@ header nav ul li a:hover {
   justify-content: center;
   background-color: #f4f4f4;
   padding: 50px 20px;
+  height: 100vh; /* Full-screen hero section */
+  background: #333; /* Dark background */
+  color: white; /* Light text */
 }
 
 .hero-content {
@@ -59,20 +68,22 @@ header nav ul li a:hover {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  color: #333;
+  font-size: 3rem; /* Larger title */
+  color: #fff;
+  margin-bottom: 0.5em;
 }
 
 .hero h2 {
-  font-size: 1.5rem;
-  color: #555;
+  font-size: 1.8rem;
+  color: #ff6600; /* Accent color for sub-heading */
   margin-top: 10px;
 }
 
 /* Image Style */
 .hero .hero-image {
-  max-width: 300px;
+  max-width: 400px; /* Increased image size */
   border-radius: 10px;
+  margin-left: 20px; /* Add spacing between the text and image */
 }
 
 /* Footer Section */
@@ -84,4 +95,20 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .hero-content {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+  }
+
+  .hero .hero-image {
+      max-width: 100%;
+      margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .hero h1, .hero h2 {
+      text-align: center;
+  }
 }
