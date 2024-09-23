@@ -69,7 +69,7 @@ header nav ul li a:hover {
 
 /* Image on the left */
 .hero .left {
-  max-width: 400px; /* Limit image size */
+  max-width: 100px; /* Limit image size */
   margin-right: 50px; /* Add space between the image and the text */
 }
 
