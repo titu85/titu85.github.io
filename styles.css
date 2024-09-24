@@ -51,16 +51,15 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   padding: 50px 20px;
   height: 100vh;
-  background: #f9f9f9; /* Light background */
-  color: #333; /* Dark text */
+  color: #333;
 }
 
 .hero-content {
   display: flex;
-  flex-direction: row; /* Make image appear on the left and text on the right */
+  flex-direction: row; /* Image on left, text on right */
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -69,20 +68,48 @@ header nav ul li a:hover {
 
 /* Image on the left */
 .hero .left {
-  max-width: 100px; /* Limit image size */
-  margin-right: 50px; /* Add space between the image and the text */
+  margin-right: 50px; /* Space between image and text */
 }
 
-.hero h1 {
+.hero .left img {
+  width: 10cm;
+  height: 5cm;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hero .right h1 {
   font-size: 3rem;
   color: #333;
   margin-bottom: 0.5em;
 }
 
-.hero h2 {
+.hero .right h2 {
   font-size: 1.8rem;
   color: #555;
   margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero .left {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .hero .left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero .right h1,
+  .hero .right h2 {
+    text-align: center;
+  }
 }
 
 /* Responsive Design for Smaller Screens */
