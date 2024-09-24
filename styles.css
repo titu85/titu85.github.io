@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -51,15 +51,16 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f9f9f9;
+  background-color: #f4f4f4;
   padding: 50px 20px;
   height: 100vh;
-  color: #333;
+  background: #2a2a2a; /* Dark background */
+  color: white; /* Light text */
 }
 
 .hero-content {
   display: flex;
-  flex-direction: row; /* Image on left, text on right */
+  flex-direction: row; /* Make image appear on the left and text on the right */
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -68,64 +69,36 @@ header nav ul li a:hover {
 
 /* Image on the left */
 .hero .left {
-  margin-right: 50px; /* Space between image and text */
+  max-width: 400px; /* Limit image size */
+  margin-right: 50px; /* Add space between the image and the text */
 }
 
-.hero .left img {
-  width: 10cm;
-  height: 15cm;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.hero .right h1 {
-  font-size: 3rem;
-  color: #333;
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
   margin-bottom: 0.5em;
 }
 
-.hero .right h2 {
-  font-size: 1.8rem;
-  color: #555;
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
   margin-top: 10px;
 }
 
 /* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
-  .hero-content {
+.hero-content {
     flex-direction: column;
-  }
-
-  .hero .left {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .hero .left img {
-    width: 100%;
-    height: auto;
-  }
-
-  .hero .right h1,
-  .hero .right h2 {
-    text-align: center;
-  }
 }
 
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
-  .hero-content {
-      flex-direction: column;
-  }
+.hero .left {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
 
-  .hero .left {
-      max-width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .hero h1, .hero h2 {
-      text-align: center;
-  }
+.hero h1, .hero h2 {
+    text-align: center;
+}
 }
 
 /* Footer Section */
