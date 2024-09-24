@@ -17,8 +17,8 @@ header {
 }
 
 header .logo img {
-  max-width: 50px;
-  height: auto;
+  width: 2cm;
+  height: 2cm;
 }
 
 header nav ul {
@@ -100,7 +100,7 @@ header nav ul li a:hover {
 /* Text box overlapping the image */
 .hero .right {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: calc(11cm - 1cm); /* Adjust left position based on image width */
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0);
@@ -120,6 +120,23 @@ header nav ul li a:hover {
   margin-top: 0;
 }
 
+/* Style for the opening sentence */
+.opening-sentence {
+  margin-top: 200px; /* Pushes the paragraph to the bottom */
+  margin-bottom: 20px; /* Adds space at the bottom if needed */
+  font-size: 1.2rem;     /* Adjust the font size as needed */
+  color: #555;         /* Optional: change color if desired */
+  text-align: justify;
+  padding: 0 10px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.opening-sentence em {
+  font-style: italic; /* Ensures the text is italicized */
+}
+
 /* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
   .hero-content {
@@ -128,6 +145,10 @@ header nav ul li a:hover {
     align-items: center;
   }
 
+  header .logo img {
+    width: 100px;
+    height: 100px;
+}
   .hero .left,
   .hero .right {
     position: static;
@@ -159,6 +180,77 @@ header nav ul li a:hover {
     font-size: 1.5rem;
   }
 }
+
+/* Biography Section */
+.biography {
+  position: relative;
+  background-color: #f9f9f9; /* You can change this color as desired */
+  padding: 50px 20px;
+}
+
+.biography-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.biography .left {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.biography .left h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.biography .left p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.biography .right {
+  flex: 1;
+}
+
+.biography .right img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive Design for Biography Section */
+@media screen and (max-width: 768px) {
+  .biography-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .biography .left {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .biography .right {
+    margin-bottom: 20px;
+  }
+
+  .biography .left h2 {
+    font-size: 2rem;
+  }
+
+  .biography .left p {
+    font-size: 1rem;
+  }
+}
+
+
+
 
 /* Footer Section */
 footer {
